@@ -8,7 +8,7 @@ from datetime import datetime
 
 def send_notification(message):
     title = "库街区自动签到任务"
-    message = f"当前时间是：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}" + message
+    message = f"当前签到时间是：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}。" + message
     send_bark_notification(title, message)
     send_server3_notification(title, message)
 
